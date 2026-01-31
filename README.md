@@ -1,4 +1,14 @@
- ﻿# 🔐 BioSecure - Advanced Iris Recognition System
+ ---
+title: BioSecure Iris Demo
+emoji: 👁️
+colorFrom: blue
+colorTo: green
+sdk: docker
+pinned: false
+app_port: 7860
+---
+
+# 🔐 BioSecure - Advanced Iris Recognition System
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![Flask](https://img.shields.io/badge/Flask-2.0+-green.svg)](https://flask.palletsprojects.com/)
@@ -155,78 +165,3 @@ The system uses the following classification thresholds:
 - **0.35+**: Possible Match (Conditional Access)
 - **0.20+**: Inconclusive (Additional Verification Required)
 - **<0.20**: No Match (Access Denied)
-
-### Customization
-You can modify algorithm parameters in `detectioncode/fulldetection.py`:
-- CLAHE parameters (lines 12-13)
-- Gabor filter orientations (line 207)
-- Feature extraction weights (lines 66-72)
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-**ImportError: No module named 'cv2'**
-```bash
-pip install opencv-python
-```
-
-**Memory Error during processing**
-- Reduce image size before processing
-- Ensure sufficient RAM (4GB minimum)
-
-**Poor recognition accuracy**
-- Use high-quality, well-lit images
-- Ensure iris is clearly visible and in focus
-- Try different lighting conditions
-
-**Flask server won't start**
-```bash
-# Check if port 5000 is available
-netstat -an | grep 5000
-
-# Use different port if needed
-export FLASK_RUN_PORT=8080
-python app.py
-```
-
-## 📈 Future Enhancements
-
-- [ ] Real-time video processing
-- [ ] Mobile app integration
-- [ ] Database storage for enrolled users
-- [ ] REST API for third-party integration
-- [ ] Multi-factor authentication
-- [ ] Performance optimization for large-scale deployment
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👨‍💻 Authors
-
-- **Your Name** - *Initial work* - [YourGitHub](https://github.com/yourusername)
-
-## 🙏 Acknowledgments
-
-- OpenCV community for computer vision tools
-- Flask development team for the web framework
-- Scientific Python ecosystem (NumPy, SciPy)
-- Computer vision research community
-
-## 📧 Support
-
-For support and questions:
-- Create an [Issue](https://github.com/yourusername/BioSecure-Iris-Recognition-System/issues)
-- Email: your.email@example.com
-
----
-
