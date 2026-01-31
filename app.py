@@ -80,7 +80,7 @@ def upload_file():
 
     cnn_vis1 = np.zeros((64, 64), dtype=np.uint8)
     if cnn_features1.size > 0:
-        normalized_cnn = cv2.normalize(cnn_features1, None, 0, 255, cv2.NORM_MINMAX)
+        normalized_cnn = cv2.normalize(cnn_features1, None, 0, 255, cv2.NORM_MINMAX).flatten()
         for i in range(min(64, len(normalized_cnn))):
             row, col = i // 8, i % 8
             if row < 8 and col < 8:
@@ -107,7 +107,7 @@ def upload_file():
 
     cnn_vis2 = np.zeros((64, 64), dtype=np.uint8)
     if cnn_features2.size > 0:
-        normalized_cnn2 = cv2.normalize(cnn_features2, None, 0, 255, cv2.NORM_MINMAX)
+        normalized_cnn2 = cv2.normalize(cnn_features2, None, 0, 255, cv2.NORM_MINMAX).flatten()
         for i in range(min(64, len(normalized_cnn2))):
             row, col = i // 8, i % 8
             if row < 8 and col < 8:
