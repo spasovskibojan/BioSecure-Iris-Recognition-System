@@ -1,4 +1,4 @@
- ---
+---
 title: BioSecure Iris Demo
 emoji: 👁️
 colorFrom: blue
