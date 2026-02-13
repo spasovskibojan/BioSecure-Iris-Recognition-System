@@ -83,40 +83,6 @@ reportlab>=3.6.0
 Pillow>=8.3.0
 ```
 
-## 🚀 Installation & Setup
-
-### Step 1: Clone the Repository
-```bash
-git clone https://github.com/spasovskibojan/BioSecure-Iris-Recognition-System.git
-cd BioSecure-Iris-Recognition-System
-```
-
-### Step 2: Create Virtual Environment (Recommended)
-```bash
-# On Windows
-python -m venv venv
-venv\Scripts\activate
-
-# On macOS/Linux
-python3 -m venv venv
-source venv/bin/activate
-```
-
-### Step 3: Install Dependencies
-```bash
-pip install --upgrade pip
-pip install Flask>=2.0.0
-pip install opencv-python>=4.5.0
-pip install numpy>=1.21.0
-pip install scipy>=1.7.0
-pip install reportlab>=3.6.0
-pip install Pillow>=8.3.0
-```
-
-### Step 4: Verify Installation
-```bash
-python -c "import cv2, numpy, scipy, flask; print('All dependencies installed successfully!')"
-```
 
 ### Step 5: Run the Application
 ```bash
